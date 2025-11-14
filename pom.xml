@@ -35,13 +35,26 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Validation (Jakarta + Hibernate Validator) -->
+        <!-- Validation -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- DevTools for hot reload -->
+        <!-- JDBC support -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <!-- Embedded H2 database -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- DevTools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -63,7 +76,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Selenium 4 + HtmlUnit 3 driver (aligned versions) -->
+        <!-- Selenium 4 + HtmlUnit 3 driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -78,6 +91,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
